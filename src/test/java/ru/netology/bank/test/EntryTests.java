@@ -61,6 +61,6 @@ public class EntryTests {
     public void mustFailedByInvalidVerificationCode() {
         VerificationPage verificationPage = loginPage.validLogin(DataHelper.getAuthInfo());
         verificationPage.tryToVerify(DataHelper.generateRandomVerificationCode());
-        verificationPage.errorAfterInvalidVerification("Ошибка! Неверно указан код! Попробуйте еще раз.");
+        verificationPage.errorAfterInvalidVerification("Ошибка! Неверно указан код! Попробуйте ещё раз.");
     }
 }
