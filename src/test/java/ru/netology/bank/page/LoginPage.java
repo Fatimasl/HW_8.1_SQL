@@ -8,10 +8,10 @@ import static com.codeborne.selenide.Condition.visible;
 import static com.codeborne.selenide.Selenide.$;
 
 public class LoginPage {
-    SelenideElement loginEl = $("[data-test-id=login] input");
-    SelenideElement passwordEl = $("[data-test-id=password] input");
-    SelenideElement actionLoginEl = $("[data-test-id=action-login]");
-    SelenideElement errorEl = $("[data-test-id=error-notification] .notification__content");
+    private SelenideElement loginEl = $("[data-test-id=login] input");
+    private SelenideElement passwordEl = $("[data-test-id=password] input");
+    private SelenideElement actionLoginEl = $("[data-test-id=action-login]");
+    private SelenideElement errorEl = $("[data-test-id=error-notification] .notification__content");
 
     public void tryToLogin(DataHelper.AuthInfo info){
         loginEl.setValue(info.getLogin());
